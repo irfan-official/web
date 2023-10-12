@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('nice_2.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white; /* Set text color to white */
+  }
+  
+  .signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .signup-box {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 4px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Further reduced brightness */
+    color: white; /* Set text color to white */
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.4); /* Further reduced brightness */
+  }
+  
+  .radio-label {
+    margin-right: 10px;
+  }
+  
+  .gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Added double line spacing */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button.register {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .button.back {
+    background-color: #95a5a6;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<div class="signup-container">
+  <div class="signup-box">
+    <h2>Signup</h2>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name">
+    <p>Gender</p>
+    <div class="gender-options">
+      <label class="radio-label"><input type="radio" name="gender" value="male"> Male</label>
+      <label class="radio-label"><input type="radio" name="gender" value="female"> Female</label>
+      <label class="radio-label"><input type="radio" name="gender" value="others"> Others</label>
+    </div>
+    <input type="text" placeholder="Email ID">
+    <input type="password" placeholder="Password">
+    <p>Are you a Bangladeshi?</p>
+    <label class="radio-label"><input type="radio" name="nationality" value="yes"> Yes</label>
+    <label class="radio-label"><input type="radio" name="nationality" value="no"> No</label>
+    <div class="button-container">
+      <button class="button register">Register</button>
+      <button class="button back">Back</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
